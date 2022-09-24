@@ -32,6 +32,8 @@
 		8FB3B04B28DED14700CCD725 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB3B04A28DED14700CCD725 /* GoogleSignInSwift */; };
 		8FB3B04D28DED2C100CCD725 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3B04C28DED2C100CCD725 /* Login.swift */; };
 		8FB3B05228DF213900CCD725 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3B05128DF213900CCD725 /* Tracker.swift */; };
+		8FB3B05428DF2C3B00CCD725 /* YourRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3B05328DF2C3B00CCD725 /* YourRequest.swift */; };
+		8FB3B05628DF354300CCD725 /* SetGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3B05528DF354300CCD725 /* SetGoals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		8FB3B04C28DED2C100CCD725 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		8FB3B04E28DEDDD200CCD725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8FB3B05128DF213900CCD725 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		8FB3B05328DF2C3B00CCD725 /* YourRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRequest.swift; sourceTree = "<group>"; };
+		8FB3B05528DF354300CCD725 /* SetGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +138,6 @@
 				8FB3B04E28DEDDD200CCD725 /* Info.plist */,
 				8F5D15A528DE568F0074DC83 /* GoogleService-Info.plist */,
 				8FB3B04F28DF1BAC00CCD725 /* Main */,
-				8FB3B04528DEC47000CCD725 /* ViewControlModel.swift */,
 				8FB3B05028DF1BC800CCD725 /* Model */,
 				8F5D157D28DE4ACB0074DC83 /* Assets.xcassets */,
 				8F5D157B28DE4AC90074DC83 /* ContentView.swift */,
@@ -173,9 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				8F5D15A328DE4B210074DC83 /* Activity.swift */,
+				8FB3B05328DF2C3B00CCD725 /* YourRequest.swift */,
 				8FB3B03F28DEAEF600CCD725 /* Request.swift */,
 				8FB3B04128DEBC0100CCD725 /* Profile.swift */,
 				8FB3B05128DF213900CCD725 /* Tracker.swift */,
+				8FB3B05528DF354300CCD725 /* SetGoals.swift */,
 				8FB3B04328DEC0E800CCD725 /* Resquesting.swift */,
 				8FB3B04C28DED2C100CCD725 /* Login.swift */,
 			);
@@ -186,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				8F5D15B028DE59880074DC83 /* AuthViewModel.swift */,
+				8FB3B04528DEC47000CCD725 /* ViewControlModel.swift */,
 				8F5D15B228DE5A540074DC83 /* DataStructure.swift */,
 				8F5D15B428DE64070074DC83 /* Actab.swift */,
 			);
@@ -341,12 +347,14 @@
 				8F5D15B128DE59880074DC83 /* AuthViewModel.swift in Sources */,
 				8FB3B04228DEBC0100CCD725 /* Profile.swift in Sources */,
 				8FB3B04D28DED2C100CCD725 /* Login.swift in Sources */,
+				8FB3B05428DF2C3B00CCD725 /* YourRequest.swift in Sources */,
 				8F5D15A428DE4B210074DC83 /* Activity.swift in Sources */,
 				8F5D15B328DE5A540074DC83 /* DataStructure.swift in Sources */,
 				8F5D157C28DE4AC90074DC83 /* ContentView.swift in Sources */,
 				8FB3B04028DEAEF600CCD725 /* Request.swift in Sources */,
 				8F5D157A28DE4AC90074DC83 /* myRidePalApp.swift in Sources */,
 				8FB3B04428DEC0E800CCD725 /* Resquesting.swift in Sources */,
+				8FB3B05628DF354300CCD725 /* SetGoals.swift in Sources */,
 				8FB3B04628DEC47000CCD725 /* ViewControlModel.swift in Sources */,
 				8F5D15B528DE64080074DC83 /* Actab.swift in Sources */,
 			);
