@@ -3,7 +3,6 @@
 //  myRidePal
 //
 //  Created by Long Hai on 9/23/22.
-//
 
 import SwiftUI
 
