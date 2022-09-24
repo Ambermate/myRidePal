@@ -1,7 +1,7 @@
 
 # MyRidePal!
 Login page: users can log in using their google email.
-![login](https://user-images.githubusercontent.com/104162702/192102804-f2c13ffa-4648-49f8-b8f0-067532c3af6a.PNG | width=100)
+![login](https://user-images.githubusercontent.com/104162702/192102804-f2c13ffa-4648-49f8-b8f0-067532c3af6a.PNG)
 
 After logging in, users are prompted to set a CO2 saved goal.
 ![SetGoal](https://user-images.githubusercontent.com/104162702/192102808-da00afda-aac5-4c3c-9e56-38ce5c8f9780.PNG)
