@@ -44,7 +44,7 @@ struct Request: View {
                 Spacer()
         
                 Button(action: {controlModel.isShowingRequest = true}) {
-                    Text("Resquest")
+                    Text("Request")
                         .font(.system(size: 20))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 15)

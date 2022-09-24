@@ -28,13 +28,13 @@ struct Profile: View {
                     
                     Spacer().frame(height: 20)
                     
-                    KFImage(URL(string: "https://www.dropbox.com/s/yxtcywzkxm821a0/yingchou-han-IJrIeCs3D4g-unsplash.jpg?dl=1"))
+                    KFImage(URL(string: "https://www.dropbox.com/s/g9ar4p27ir3g4db/juan-encalada-WC7KIHo13Fc-unsplash.jpg?dl=1"))
                         .resizable()
                         .scaledToFill()
                         .frame(width: 170, height: 170)
                         .clipShape(Circle())
                 
-                    Text("John Cena")
+                    Text("Peter Parker")
                         .fontWeight(.bold)
                         .font(.system(size: 25))
                         .padding(20)

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Tracker: View {
+    @EnvironmentObject var controlModel: ViewControlModel
+    @State var isOn = false
     var body: some View {
         
         ZStack {
@@ -21,6 +23,7 @@ struct Tracker: View {
                 Text("Here's your CO2 emission tracker")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.leading, 40)
+                    
                 
                 Spacer().frame(height: 20)
                 
@@ -33,8 +36,11 @@ struct Tracker: View {
                         Rectangle()
                             .frame(height: 10)
                             .cornerRadius(20)
+                            .padding(.trailing, 50)
+                            .animation(.linear(duration: 3.0), value: isOn)
+                            
                         
-                        Text("33,300 kg CO2 reduce")
+                        Text("1,300 kg CO2 reduce")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                         
                         
@@ -50,7 +56,7 @@ struct Tracker: View {
                         Rectangle()
                             .frame(height: 10)
                             .cornerRadius(20)
-                            .padding(.trailing, 100)
+                            .padding(.trailing, 200)
                             //.frame(maxWidth: .infinity, alignment: .leading)
                         
                         Text("300 kg CO2 reduce")
@@ -67,9 +73,8 @@ struct Tracker: View {
             VStack {
                 Spacer()
                 
-                Button(action: {}
-                ) {
-                    Text("See Rewards")
+                Button(action: {controlModel.isShowingGoals = true}) {
+                    Text("Set Goals")
                         .font(.system(size: 20))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 15)
@@ -80,7 +85,14 @@ struct Tracker: View {
                     
                 }
                 .padding(.vertical, 30)
+                
             }
+        }
+        .onAppear {
+            isOn = true
+        }
+        .fullScreenCover(isPresented: $controlModel.isShowingGoals, onDismiss: {}) {
+            SetGoals()
         }
 
     }
@@ -89,5 +101,6 @@ struct Tracker: View {
 struct Tracker_Previews: PreviewProvider {
     static var previews: some View {
         Tracker().previewDevice("iPhone 13")
+            .environmentObject(ViewControlModel())
     }
 }

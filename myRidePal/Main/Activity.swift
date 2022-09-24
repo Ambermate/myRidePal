@@ -20,12 +20,32 @@ struct Activity: View {
         
         ZStack {
             VStack {
-                Text("Requesting")
-                    .fontWeight(.bold)
-                    .font(.system(size: 40))
-                    .padding(20)
-                    .padding(.horizontal, 20)
+//                Text("Your Requests")
+//                    .fontWeight(.bold)
+//                    .font(.system(size: 40))
+//                    .padding(20)
+//                    .padding(.horizontal, 20)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//
+//                Spacer().frame(height: 10)
+                
+                
+                
+                HStack {
+                    Text("Requesting")
+                        .fontWeight(.bold)
+                        .font(.system(size: 40))
+                        .padding(20)
+                        .padding(.horizontal, 20)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Button(action: {controlModel.isShowingYourRequest = true}) {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
+                            .padding(.trailing, 20)
+                            .font(.system(size: 30))
+                            .foregroundColor(.black)
+                    }
+                }
                 
                 Spacer().frame(height: 10)
                 
@@ -127,6 +147,9 @@ struct Activity: View {
         }
         .fullScreenCover(isPresented: $controlModel.isShowingRequest, onDismiss: {}) {
             Resquesting()
+        }
+        .sheet(isPresented: $controlModel.isShowingYourRequest, onDismiss: {}) {
+            YourRequest()
         }
     }
 }

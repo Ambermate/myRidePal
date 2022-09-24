@@ -37,6 +37,17 @@ struct Resquesting: View {
                     .cornerRadius(15)
                     .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
                 
+                Spacer().frame(height: 20)
+                
+                TextField("What time are you leaving?", text: $to)
+                    .padding(.leading)
+                    .font(.system(size: 18))
+                    .frame(width: 325, height: 49)
+                    .padding(5)
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                
                 Spacer().frame(height: 50)
             }
             
