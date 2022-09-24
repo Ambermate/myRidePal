@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("loginStatus") var loginStatus = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        if loginStatus {
+            TabView {
+                Tracker()
+               
+                Activity()
+    
+                Profile()
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        } else {
+            Login()
+        }
+        
     }
 }
 
