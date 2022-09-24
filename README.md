@@ -1,6 +1,6 @@
 # MyRidePal!
 <p align="center">
-    Login page: users can log in using their google email.
+    Login page: users can log in using their google email. 
 </p>
 
 <p align="center" width="100%">
